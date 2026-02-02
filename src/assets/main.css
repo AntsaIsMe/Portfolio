@@ -1,0 +1,63 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --darker : #181817;
+    --dark : #0a1543;
+    --normal : #19327f;
+    --light : #021fa0;
+    --lighter : #1b45d7;
+    --lightest : #e8edff;
+}
+
+body{
+  background: linear-gradient( var(--darker),var(--dark), var(--darker));
+}
+
+@keyframes boom {
+  from{
+      transform: scale(3.5);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+@layer base{
+  body{
+    @apply text-blue-100/85;
+    text-shadow: -1px 0px 14px #7493ff;
+  }
+  body::selection{
+    color: red;
+    text-shadow: -1px 0px 14px #ff0000;
+
+  }
+  html{
+    scroll-behavior: smooth
+  }
+}
+
+@layer components{
+  .border-neon{
+    @apply border-2 border-blue-200 rounded-sm;
+    @apply ring-2 ring-[theme('colors.lighter')];
+  }
+  .shadow-neon{
+    @apply drop-shadow-[-1px_0px_0px_#7493ff];
+  }
+  .rounded-neon{
+    @apply m-0 p-1 rounded-xl aspect-square flex items-center justify-center;
+    
+  }
+  .text-without{
+    text-shadow: none;
+  }
+
+  .text-sBlack{
+    text-shadow: -1px 0px 14px #000000;
+  }
+}
+
