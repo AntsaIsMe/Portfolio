@@ -1,4 +1,4 @@
-[antsa-s-portfolio.netlify.app](https://antsa-s-portfolio.netlify.app/#projets)
+[antsa-s-portfolio.netlify.app](https://antsa-s-portfolio.netlify.app)
 # portfolio
 
 This template should help get you started developing with Vue 3 in Vite.
